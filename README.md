@@ -16,7 +16,7 @@ cloud data, bypass subscription entitlements, or download route recordings.
 ## Installation
 
 ```sh
-python -m pip install py-equilab
+python -m pip install equilab
 ```
 
 ## Usage

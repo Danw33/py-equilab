@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Publish the distribution as `equilab`, while retaining `pyequilab` as the import
+  package.
+
 ## 0.1.0
 
 - Initial typed, asynchronous and read-only Equilab client.
