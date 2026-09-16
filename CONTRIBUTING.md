@@ -5,7 +5,6 @@ Use Python 3.11 or newer and install the test extra:
 ```sh
 python -m pip install -e '.[test]'
 pytest --cov=pyequilab --cov-branch --cov-report=term-missing
-(cd probe && python -m unittest -q test_probe.py)
 ruff check .
 ruff format --check .
 mypy

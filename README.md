@@ -49,20 +49,11 @@ Long-running applications should persist `client.refresh_token` securely. Pass a
 All public network operations are asynchronous. Exceptions contain safe generic
 messages and never include response bodies, credentials, identifiers, or request URLs.
 
-## Research probe
-
-The `probe` directory contains a standalone, standard-library diagnostic tool used
-to validate the undocumented cloud schema and recording formats. It is intentionally
-separate from the installable package and is not used at runtime. Its private output
-can contain personal details and precise locations; follow `probe/README.md` and share
-only the redacted report after reviewing it.
-
 ## Development
 
 ```sh
 python -m pip install -e '.[test]'
 pytest --cov=pyequilab --cov-branch --cov-report=term-missing
-(cd probe && python -m unittest -q test_probe.py)
 ruff check .
 ruff format --check .
 mypy

@@ -32,7 +32,4 @@ jobs:
       - run: ruff check .
       - run: mypy
       - run: pytest --cov=pyequilab --cov-branch --cov-report=term-missing --cov-report=xml
-      - name: Run standalone probe tests
-        working-directory: probe
-        run: python -m unittest -q test_probe.py
       - run: python -m build

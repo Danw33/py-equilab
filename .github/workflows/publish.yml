@@ -34,9 +34,6 @@ jobs:
       - run: ruff check .
       - run: mypy
       - run: pytest --cov=pyequilab --cov-branch --cov-report=term-missing --cov-report=xml
-      - name: Run standalone probe tests
-        working-directory: probe
-        run: python -m unittest -q test_probe.py
       - run: python -m build
       - run: python -m twine check dist/*
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

@@ -46,6 +46,20 @@ test = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyequilab"]
 
+[tool.hatch.build.targets.sdist]
+include = [
+  "/.github",
+  "/src/pyequilab",
+  "/tests",
+  "/CHANGELOG.md",
+  "/CONTRIBUTING.md",
+  "/LICENSE",
+  "/NOTICE",
+  "/README.md",
+  "/SECURITY.md",
+  "/pyproject.toml",
+]
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
