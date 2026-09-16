@@ -40,7 +40,7 @@ test = [
   "pytest==9.1.1",
   "pytest-asyncio==1.4.0",
   "pytest-cov==7.0.0",
-  "ruff==0.16.6",
+  "ruff==0.16.7",
 ]
 
 [tool.hatch.build.targets.wheel]
