@@ -1,5 +1,9 @@
 # py-equilab: Equilab API Client Python Library
 
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FDanw33%2Fpy-equilab%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)
+[![PyPI Version](https://img.shields.io/pypi/v/equilab)](https://pypi.org/project/equilab/)
+
 An **unofficial**, asynchronous, read-only Python client for the Equilab cloud API.
 
 This library provides authentication, token renewal, bounded concurrent reads,
